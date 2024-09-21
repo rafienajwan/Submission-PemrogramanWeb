@@ -1,0 +1,178 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: black;
+
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  text-align: justify;
+  color: black;
+}
+
+h2 {
+  color: #8D493A;
+}
+
+h3 {
+  color: #DFD3C3;
+}
+ 
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #DFD3C3;
+  text-align: center;
+  font-weight: bold;
+}
+
+.featured-image {
+  width: 60%;
+  max-height: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-card header {
+  text-align: center;
+}
+
+.profile-card img {
+  width: 200px;
+}
+
+.profile-card th, h3 {
+  color: #8D493A;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.card p {
+  color: black;
+}
+
+.jumbotron {
+  font-size: 20px;
+  padding: 30px;
+  background-color: #DFD3C3;
+  text-align: center;
+  color: #8D493A;
+}
+
+nav {
+  background-color: #D0B8A8;
+  padding: 5px;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+ 
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav .menu-icon {
+  display: none;
+  font-size: 64px;
+  cursor: pointer;
+}
+
+nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+ 
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+header {
+  display: inline;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 8;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+aside {
+  flex: 2;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    align-self: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav.responsive {
+    position: relative;
+  }
+
+  nav.responsive .menu-icon {
+    display: block;
+  }
+  nav.responsive a {
+    display: block;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
